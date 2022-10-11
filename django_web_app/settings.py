@@ -1,3 +1,5 @@
+import settings_private
+
 """
 Django settings for django_web_app project.
 
@@ -20,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-z$y4tvgtl4i6_%s-q=9j@dzp&6+eow5!!_diai2i_jktpz81=r'
+SECRET_KEY = settings_private.SECRET_KEY
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
