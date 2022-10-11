@@ -1,0 +1,28 @@
+{% extends 'meetups/base/base.html' %}
+
+{% load static %}
+
+{% block title %}
+You registred successfully!
+{% endblock %}
+
+{% block site_css %}
+<link rel="stylesheet" href="{% static 'meetups/styles/registration-confirmation.css' %}">
+{% endblock %}
+
+{% block main_heading %}
+Thanks for signing up!
+{% endblock %}
+
+{% block body %} <section id="confirmation">
+    <h2>You registred successfully!</h2>
+    <p>Thanks for signing up - see you at the meetup!</p>
+    <p>If you have any questions or cannot attend the meeting, please <a href="mailto: {{ organizer_email }} ">contact</a> the organizer</p>
+</section>
+
+<section>
+    <p>You can attend more meetings if you feel like!</p>
+    <p><a href="/meetups/" class="btn">Explore our meetups!</a></p>
+
+</section>
+{% endblock %}
